@@ -7,7 +7,7 @@
 
         <variable
             name="viewModel"
-            type="com.faskn.app.weatherapp.ui.main.MainActivityViewModel" />
+            type="com.example.weatherapp.ui.main.MainActivityViewModel" />
 
     </data>
 
