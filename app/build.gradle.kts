@@ -2,11 +2,11 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
 
-    id("kotlin-android")
+//    id("kotlin-android")
     id("kotlin-kapt")
     id("androidx.navigation.safeargs")
     id("kotlin-parcelize")
-    id("org.jlleitschuh.gradle.ktlint")
+//    id("org.jlleitschuh.gradle.ktlint")
     id("dagger.hilt.android.plugin")
 
 }
@@ -64,11 +64,10 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.9.22")
     implementation("org.jetbrains.kotlin:kotlin-reflect:1.9.20")
 
-// android support
+    // androidx dependencies
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
     implementation("androidx.appcompat:appcompat:1.7.0")
     implementation("com.google.android.material:material:1.12.0")
@@ -76,62 +75,63 @@ dependencies {
     implementation("androidx.cardview:cardview:1.0.0")
     implementation("androidx.core:core-ktx:1.13.1")
 
-// lifecycle
-    implementation("androidx.lifecycle:lifecycle-extensions:2.5.1")
+    // lifecycle
     kapt("androidx.lifecycle:lifecycle-compiler:2.8.3")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.3")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.3")
 
-// navigation
+    // navigation
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
 
-// room
+    // room
     implementation("androidx.room:room-runtime:2.6.1")
     kapt("androidx.room:room-compiler:2.6.1")
 
-// hilt
+    // hilt
     implementation("com.google.dagger:hilt-android:2.49")
     kapt("com.google.dagger:hilt-compiler:2.49")
 
-// rx
+    // rx
     implementation("io.reactivex.rxjava2:rxjava:2.2.21")
     implementation("io.reactivex.rxjava2:rxandroid:2.1.1")
     implementation("io.reactivex.rxjava2:rxkotlin:2.4.0")
-    implementation("com.mikhaellopez:rxanimation:1.0.0")
+    // Uncomment the line below if using rxanimation
+//     implementation("com.mikhaellopez:rxanimation:2.2.0")
+//    implementation ("com.mikhaellopez:rxanimation:1.0.3")
 
-// network
+
+//    implementation ("com.loopeer.lib:shadow:0.0.4-beta3")
+
+    // network
     implementation("com.squareup.retrofit2:retrofit:2.10.0")
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
     implementation("com.squareup.retrofit2:adapter-rxjava2:2.9.0")
 
-// moshi
+    // moshi
     implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
     implementation("com.squareup.moshi:moshi:1.13.0")
     implementation("com.squareup.moshi:moshi-kotlin:1.13.0")
-    kapt("com.squareup.moshi:moshi-kotlin-codegen:1.13.0")
+//    kapt("com.squareup.moshi:moshi-kotlin-codegen:1.13.0")
 
-// picasso
+    // picasso
     implementation("com.squareup.picasso:picasso:2.71828")
 
-// shadowView
-    implementation("com.loopeer.lib:shadow:1.1.2")
-
-// threetenabp
+    // threetenabp
     implementation("com.jakewharton.threetenabp:threetenabp:1.3.1")
 
-// algolia
+    // algolia
     implementation("com.algolia:algoliasearch-android:3.27.0")
 
-// stetho
+    // stetho
     implementation("com.facebook.stetho:stetho:1.6.0")
     implementation("com.facebook.stetho:stetho-okhttp3:1.6.0")
     implementation("com.facebook.stetho:stetho-urlconnection:1.6.0")
 
-// timber
+    // timber
     implementation("com.jakewharton.timber:timber:5.0.1")
 
-// test
+    // test
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test:runner:1.6.1")
     androidTestImplementation("androidx.test:rules:1.6.1")
@@ -144,3 +144,4 @@ dependencies {
     testImplementation("org.robolectric:robolectric:4.8.1")
 
 }
+

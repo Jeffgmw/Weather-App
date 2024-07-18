@@ -6,7 +6,7 @@
 
         <variable
             name="viewModel"
-            type="com.example.weatherapp.ui.search.result.SearchResultItemViewModel" />
+            type="com.example.weatherapp.presentation.ui.search.result.SearchResultItemViewModel" />
     </data>
 
     <RelativeLayout

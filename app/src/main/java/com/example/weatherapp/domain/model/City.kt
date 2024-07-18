@@ -1,6 +1,7 @@
-package com.faskn.app.weatherapp.domain.model
+package com.example.weatherapp.domain.model
 
 import android.os.Parcelable
+import com.example.weatherapp.domain.model.Coord
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 import kotlinx.parcelize.Parcelize

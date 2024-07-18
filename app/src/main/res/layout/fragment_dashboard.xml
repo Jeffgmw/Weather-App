@@ -7,11 +7,11 @@
 
         <variable
             name="viewModel"
-            type="com.example.weatherapp.ui.dashboard.DashboardFragmentViewModel" />
+            type="com.example.weatherapp.presentation.ui.dashboard.DashboardFragmentViewModel" />
 
         <variable
             name="viewState"
-            type="com.example.weatherapp.ui.dashboard.ForecastViewState" />
+            type="com.example.weatherapp.presentation.ui.dashboard.ForecastViewState" />
     </data>
 
     <RelativeLayout

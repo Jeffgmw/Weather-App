@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.faskn.app.weatherapp.ui.splash.SplashFragment"
+        android:name="com.example.weatherapp.presentation.ui.splash.SplashFragment"
         android:label="SplashFragment">
         <action
             android:id="@+id/action_splashFragment_to_dashboardFragment"
@@ -22,25 +22,28 @@
             app:popUpTo="@+id/splashFragment"
             app:popUpToInclusive="true" />
     </fragment>
+
     <fragment
         android:id="@+id/dashboardFragment"
-        android:name="com.faskn.app.weatherapp.ui.dashboard.DashboardFragment"
+        android:name="com.example.weatherapp.presentation.ui.dashboard.DashboardFragment"
         android:label="DashboardFragment">
         <action
             android:id="@+id/action_dashboardFragment_to_weatherDetailFragment"
             app:destination="@id/weatherDetailFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/weatherDetailFragment"
-        android:name="com.faskn.app.weatherapp.ui.weather_detail.WeatherDetailFragment"
+        android:name="com.example.weatherapp.presentation.ui.weather_detail.WeatherDetailFragment"
         android:label="WeatherDetailFragment">
         <argument
             android:name="weatherItem"
-            app:argType="com.faskn.app.weatherapp.domain.model.ListItem" />
+            app:argType="com.example.weatherapp.domain.model.ListItem" />
     </fragment>
+
     <fragment
         android:id="@+id/searchFragment"
-        android:name="com.faskn.app.weatherapp.ui.search.SearchFragment"
+        android:name="com.example.weatherapp.presentation.ui.search.SearchFragment"
         android:label="SearchFragment" >
         <action
             android:id="@+id/action_searchFragment_to_dashboardFragment"
@@ -49,9 +52,11 @@
             app:popUpTo="@+id/searchFragment"
             app:popUpToInclusive="true" />
     </fragment>
+
     <dialog
         android:id="@+id/githubDialog"
-        android:name="com.faskn.app.weatherapp.utils.GithubDialog"
+        android:name="com.example.weatherapp.utils.GithubDialog"
         android:label="fragment_github_dialog"
         tools:layout="@layout/fragment_github_dialog" />
+
 </navigation>
